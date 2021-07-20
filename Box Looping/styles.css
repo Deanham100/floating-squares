@@ -1,0 +1,26 @@
+.parent {
+    background-color: bisque;
+    height: 400px;
+    width: 400px;
+  }
+
+.child {
+    background-color: rgba(252, 251, 250, 0.479);
+    height: 200px;
+    width: 200px;
+  }
+
+.parent:hover .child {
+    cursor: pointer;
+    transform: translateX(100%);
+    animation: left-to-right 1s forwards infinite;
+}
+
+@keyframes left-to-right {
+    0% {transform: translateX(0);}
+    20% {transform: translateY(100%);}
+    40% {transform: translateX(100%) translateY(100%);}
+    60% {transform: translateX(100%);}
+    100% {transform: translateX(0);}
+
+}

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+    background-color: bisque;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left:  100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.childb {
+  position: absolute;
+  font-family: fantasy;
+  font-size: 20px;
+  top: 190px;
+  left: 175px;
+}
+.child {
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    margin-top: -30;
+   
+  }
+
+.parent:hover .child {
+    cursor: pointer;
+    animation: left-to-right 3s linear forwards infinite;
+    /*animation-play-state: paused;
+    /*transform: translateX(100%);*/  
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes left-to-right {
+    0% {transform: translateX(0);}
+
+    1% {transform: translateX(0);}
+      /*background-color: rgb(252, 251, 250);}*/
+
+    20% {transform: translateY(100%);
+    background-color: rgba(236, 11, 217, 0.158);}
+
+    40% {transform: translateX(100%) translateY(100%);
+    background-color: rgba(128, 0, 128, 0.178);}
+
+    60% {transform: translateX(100%);
+    background-color: rgba(250, 20, 4, 0.164);}
+
+    100% {transform: translateX(0);}
+
+}
+
+
+
+.parent2 {
+  background-color: bisque;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  margin-top: 100px;
+  margin-left:  600px;
+  align-items: center;
+  justify-content: center;
+}
+
+.childb2 {
+position: absolute;
+font-family: fantasy;
+font-size: 20px;
+top: 190px;
+left: 175px;
+}
+
+.parent2:hover  .child2 {
+  cursor: pointer;
+  animation-play-state: paused;
+  /*transition: transform(0%);*/
+  transform: translateX(100%);
+  background-color: black;
+
+}
+
+
+.child2 {
+  background-color: none;
+  height: 200px;
+  width: 200px;
+  margin-top: -30;
+  animation: right-to-right 3s linear infinite;
+ 
+}
+
+
+@keyframes right-to-right {
+  0% {transform: translateX(0);}
+
+  1% {transform: translateX(0);}
+   
+  20% {transform: translateY(100%);
+  background-color: rgba(236, 11, 217, 0.158);}
+
+  40% {transform: translateX(100%) translateY(100%);
+  background-color: rgba(128, 0, 128, 0.178);}
+
+  60% {transform: translateX(100%);
+  background-color: rgba(250, 20, 4, 0.164);}
+
+  100% {transform: translateX(0);}
+
+
+}
+
+
+
+
+
+
+
+
+
